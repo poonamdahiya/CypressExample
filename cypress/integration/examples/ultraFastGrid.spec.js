@@ -20,7 +20,7 @@ describe("AppTest", () => {
                 target: 'window',
                 fully: true
             });
-		})
+		    })
 
         // check the login page with fluent api, see more info here
         // https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
