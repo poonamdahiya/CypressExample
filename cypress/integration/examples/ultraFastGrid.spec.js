@@ -5,7 +5,7 @@ describe("AppTest", () => {
            // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
            // but then change the above URL to https://demo.applitools.com/index_v2.html
            // (for the 2nd run)
-           cy.visit('https://demo.applitools.com');
+           cy.visit('https://demo.applitools.com/index_v2.html');
 
            // Call Open on eyes to initialize a test session
            cy.eyesOpen({
@@ -34,10 +34,7 @@ describe("AppTest", () => {
        });
 
     it(`DemoApp_Diff_Test_Layout`, function () {
-            // Navigate to the url we want to test
-            // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
-            // but then change the above URL to https://demo.applitools.com/index_v2.html
-            // (for the 2nd run)
+
             cy.visit('https://demo.applitools.com/app.html');
 
             // Call Open on eyes to initialize a test session
@@ -59,10 +56,7 @@ describe("AppTest", () => {
         });
 
     it(`DemoApp_LayoutRegion_Test_Strict`, function () {
-            // Navigate to the url we want to test
-            // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
-            // but then change the above URL to https://demo.applitools.com/index_v2.html
-            // (for the 2nd run)
+
            cy.visit('https://demo.applitools.com/app.html');
 
            // Call Open on eyes to initialize a test session
@@ -83,11 +77,30 @@ describe("AppTest", () => {
            cy.eyesClose()
                 });
 
+    it(`DemoApp_IgnoreRegion_Test_Strict`, function () {
+
+           cy.visit('https://demo.applitools.com/app.html');
+
+           // Call Open on eyes to initialize a test session
+           cy.eyesOpen({
+               appName: 'Demo App'
+           })
+
+           // check the login page with fluent api, see more info here
+           // https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
+           cy.eyesCheckWindow({
+               tag: "Login Window",
+               target: 'window',
+               ignore: [{selector: '.element-balances'}],
+               fully: true
+           });
+
+           // Call Close on eyes to let the server know it should display the results
+           cy.eyesClose()
+                });
+
     it(`DemoApp_Region_Test_Strict`, function () {
-            // Navigate to the url we want to test
-            // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
-            // but then change the above URL to https://demo.applitools.com/index_v2.html
-            // (for the 2nd run)
+
             cy.visit('https://demo.applitools.com/app.html');
 
             // Call Open on eyes to initialize a test session
