@@ -123,7 +123,7 @@ describe("AppTest", () => {
             cy.eyesClose()
         });
 
-    it(`DemoApp_Region_Test_Strict`, function () {
+    it(`DemoApp_Region2_Test_Strict`, function () {
 
                 cy.visit('https://demo.applitools.com/app.html');
 
