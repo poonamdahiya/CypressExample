@@ -23,7 +23,7 @@ jobs:
           node-version: '14.x'
       - run: npm ci
       - name: Run Tests
-        run: npm run test:ci
+        run: npm run cypress:ci
 
   batch-completion-notification:
     needs: run-tests
