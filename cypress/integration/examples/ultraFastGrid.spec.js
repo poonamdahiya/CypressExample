@@ -34,10 +34,7 @@ describe("AppTest", () => {
        });
 
     it(`DemoApp_Diff_Test_Layout`, function () {
-            // Navigate to the url we want to test
-            // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
-            // but then change the above URL to https://demo.applitools.com/index_v2.html
-            // (for the 2nd run)
+
             cy.visit('https://demo.applitools.com/app.html');
 
             // Call Open on eyes to initialize a test session
@@ -59,10 +56,7 @@ describe("AppTest", () => {
         });
 
     it(`DemoApp_LayoutRegion_Test_Strict`, function () {
-            // Navigate to the url we want to test
-            // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
-            // but then change the above URL to https://demo.applitools.com/index_v2.html
-            // (for the 2nd run)
+
            cy.visit('https://demo.applitools.com/app.html');
 
            // Call Open on eyes to initialize a test session
@@ -84,10 +78,7 @@ describe("AppTest", () => {
                 });
 
     it(`DemoApp_IgnoreRegion_Test_Strict`, function () {
-            // Navigate to the url we want to test
-            // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
-            // but then change the above URL to https://demo.applitools.com/index_v2.html
-            // (for the 2nd run)
+
            cy.visit('https://demo.applitools.com/app.html');
 
            // Call Open on eyes to initialize a test session
@@ -109,10 +100,7 @@ describe("AppTest", () => {
                 });
 
     it(`DemoApp_Region_Test_Strict`, function () {
-            // Navigate to the url we want to test
-            // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
-            // but then change the above URL to https://demo.applitools.com/index_v2.html
-            // (for the 2nd run)
+
             cy.visit('https://demo.applitools.com/app.html');
 
             // Call Open on eyes to initialize a test session
