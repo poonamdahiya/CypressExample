@@ -1,4 +1,4 @@
-describe("AppTest", () => {
+describe("AppTestNew", () => {
 
     it.only(`DemoApp_Diff_Test_Strict`, function () {
            // Navigate to the url we want to test
@@ -9,7 +9,7 @@ describe("AppTest", () => {
 
            // Call Open on eyes to initialize a test session
            cy.eyesOpen({
-               appName: 'ANZ Demo'
+               appName: 'Baseline Demo'
            })
 
            // check the login page with fluent api, see more info here
