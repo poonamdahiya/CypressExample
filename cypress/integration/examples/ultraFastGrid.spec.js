@@ -1,6 +1,6 @@
 describe("AppTest", () => {
 
-    it(`DemoApp_Diff_Test_Strict`, function () {
+    it.only(`DemoApp_Diff_Test_Strict`, function () {
            // Navigate to the url we want to test
            // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
            // but then change the above URL to https://demo.applitools.com/index_v2.html
@@ -9,7 +9,7 @@ describe("AppTest", () => {
 
            // Call Open on eyes to initialize a test session
            cy.eyesOpen({
-               appName: 'Demo App'
+               appName: 'ANZ Demo'
            })
 
            // check the login page with fluent api, see more info here
@@ -39,7 +39,7 @@ describe("AppTest", () => {
 
             // Call Open on eyes to initialize a test session
             cy.eyesOpen({
-                appName: 'Demo App'
+                appName: 'ANZ Demo'
             })
 
             // check the login page with fluent api, see more info here
@@ -61,7 +61,7 @@ describe("AppTest", () => {
 
            // Call Open on eyes to initialize a test session
            cy.eyesOpen({
-               appName: 'Demo App'
+               appName: 'ANZ Demo'
            })
 
            // check the login page with fluent api, see more info here
@@ -83,7 +83,7 @@ describe("AppTest", () => {
 
            // Call Open on eyes to initialize a test session
            cy.eyesOpen({
-               appName: 'Demo App'
+               appName: 'ANZ Demo'
            })
 
            // check the login page with fluent api, see more info here
@@ -105,7 +105,7 @@ describe("AppTest", () => {
 
             // Call Open on eyes to initialize a test session
             cy.eyesOpen({
-                appName: 'Demo App'
+                appName: 'ANZ Demo'
             })
 
             // check the login page with fluent api, see more info here
